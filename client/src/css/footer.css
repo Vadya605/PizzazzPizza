@@ -1,0 +1,31 @@
+.footer{
+    background-color: #fff;
+    color: #000;
+}
+
+.footer a{
+    color: #000;
+}
+
+.footer .container{
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: center;
+}
+
+.footer span{
+    font-family: 'Hot Pizza', sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.nav-list-footer{
+    display: flex;
+    column-gap: 10px;
+}
+
+.nav-list-footer a{
+    font-size: 20px;
+}

@@ -1,0 +1,117 @@
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    padding: 30px 50px;
+}
+
+.main-screen-row{
+    padding-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-screen-row .content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.main-screen-row .content .offer{
+    /* font-family: 'Poppins', sans-serif; */
+    font-weight: 600;
+    font-size: 50px;
+    color: #fff;
+    width: 700px;
+    line-height: 60px;
+}
+
+.main-screen-row .content .descriptor{
+    font-family: 'Pilsen Plakat', sans-serif;
+    font-size: 25px;
+    width: 600px;
+}
+
+.main-screen-row .content .link-order{
+    padding: 10px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color: #262627;
+    font-size: 20px;
+    font-weight: 600;
+    background: linear-gradient(269.02deg, #945204 12.74%, #FF9A24 100.39%);
+}
+
+.header-about{
+    text-align: center;
+    /* color: #D59042; */
+    color: #ffff4c;
+    font-size: 30px;
+    padding: 25px 0;
+}
+
+.why-we{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.block-why-we{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(90deg, #945204  7.53%, #FF9A24 96.96%);
+    border-image-slice: 1;
+}
+
+.block-why-we .title{
+    font-family: 'Hot Pizza', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    /* font-style: italic; */
+}
+
+.cards-about{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 0 30px;
+}
+
+.card-about{
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    background-color: #262627;
+    /* background-color: #d59042; */
+    /* color: #262627; */
+    width: 70%;
+    column-gap: 30px;
+}
+
+
+.card-about img{
+    /* position: absolute; */
+    width: 30%;
+}
+
+.card-about p{
+    font-size: 25px;
+}
+
+.card-about:nth-child(2){
+    align-self: end;
+}
+
+.card-about:not(:first-child) img{
+    border-radius: 50%;
+}
