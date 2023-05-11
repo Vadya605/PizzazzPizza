@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { MAIN_ROUTE, PROFILE_ROUTE } from '../utils/consts';
-const Menu = ()=> {
+import { DESSERTS_ROUTE, DRINKS_ROUTE, MAIN_ROUTE, PIZZA_ROUTE, PROFILE_ROUTE, SAUCES_ROUTE } from '../utils/consts';
+const NavMenu = ()=> {
     const [isClickMenu, setIsClickMenu] = useState(false);
     
     return(
@@ -13,11 +13,11 @@ const Menu = ()=> {
             </div>
             <div className="menu-list">
                 <ul>
-                    <li> <Link to={MAIN_ROUTE}>Главная</Link> </li>
-                    <li> <Link to={PROFILE_ROUTE}>Пицца</Link> </li>
-                    <li> <Link to={PROFILE_ROUTE}>Напитки</Link> </li>
-                    <li> <Link to={PROFILE_ROUTE}>Соусы</Link> </li>
-                    <li> <Link to={PROFILE_ROUTE}>И еще что-нибудь</Link> </li>
+                    <li> <Link to={MAIN_ROUTE}>Home</Link> </li>
+                    <li> <Link to={PIZZA_ROUTE}>Pizza</Link> </li>
+                    <li> <Link to={DRINKS_ROUTE}>Drinks</Link> </li>
+                    <li> <Link to={SAUCES_ROUTE}>Sauces</Link> </li>
+                    <li> <Link to={DESSERTS_ROUTE}>Desserts</Link> </li>
                 </ul>
             </div>
             <div className="menu-background"></div>
@@ -25,4 +25,4 @@ const Menu = ()=> {
     )
 }
 
-export default Menu;
+export default NavMenu;

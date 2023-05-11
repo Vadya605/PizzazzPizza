@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
-import { MAIN_ROUTE, PROFILE_ROUTE } from '../utils/consts'
+import { DESSERTS_ROUTE, DRINKS_ROUTE, MAIN_ROUTE, PIZZA_ROUTE, PROFILE_ROUTE, SAUCES_ROUTE } from '../utils/consts'
 import '../css/footer.css'
 
 const Footer = () => {
+    // добавить на фон картинку с помидорами или чем-то другим и найти иконки соц сетей
     return(
         <footer className="footer">
             <div className="container">
-                <img src='../assets/' alt="" />
                 <div className="logo">
                     <Link to={MAIN_ROUTE}>Pizzazz Pizza</Link> 
                 </div>
@@ -14,10 +14,10 @@ const Footer = () => {
                 <nav className="nav-footer">
                     <ul className='nav-list-footer'>
                         <li> <Link to={MAIN_ROUTE}>Homme</Link> </li>
-                        <li> <Link to={PROFILE_ROUTE}>Пицца</Link> </li>
-                        <li> <Link to={PROFILE_ROUTE}>Напитки</Link> </li>
-                        <li> <Link to={PROFILE_ROUTE}>Соусы</Link> </li>
-                        <li> <Link to={PROFILE_ROUTE}>И еще что-нибудь</Link> </li>
+                        <li> <Link to={PIZZA_ROUTE}>Pizza</Link> </li>
+                        <li> <Link to={DRINKS_ROUTE}>Drinks</Link> </li>
+                        <li> <Link to={SAUCES_ROUTE}>Sauces</Link> </li>
+                        <li> <Link to={DESSERTS_ROUTE}>Desserts</Link></li>
                     </ul>
                 </nav>
                 <div className='social-media-icons'>

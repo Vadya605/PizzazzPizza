@@ -1,0 +1,106 @@
+.list-types-food .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-types-food ul{
+    display: flex;
+    column-gap: 20px;
+}
+
+.list-types-food ul a{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Hot Pizza', sans-serif;
+    transition: color .2s ease-in-out;
+}
+
+.list-types-food ul a:hover{
+    color: #FF9A24;
+}
+
+.products .container{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 15px; */
+    justify-content: space-between;
+    row-gap: 15px;
+}
+
+.card-product{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    row-gap: 10px;
+    align-items: center;
+    background-color: #262627;
+    border-radius: 30px;
+    transition: all ease-in-out .3s;
+    max-width: 289px;
+}
+
+.card-product:hover{
+    transform: translateY(-15px);
+}
+
+.card-product .title-product{
+    font-family: 'Hot Pizza', sans-serif;
+    font-size: 25px;
+}
+
+.count-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+}
+
+.count{
+    display: flex;
+    column-gap: 12px;
+}
+
+.price{
+    font-family: 'Hot Pizza', sans-serif;
+    color: #ffff4c;
+}
+
+
+.link-choose-product{
+    background: linear-gradient(269.02deg, #945204 12.74%, #FF9A24 100.39%);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 20px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.minus, .plus{
+    cursor: pointer;
+}
+
+rect{
+    transition: all .2s ease-in-out;
+}
+
+.minus:hover rect:first-child{
+    fill: #fff;
+}
+
+.minus:hover rect:last-child{
+    stroke: #fff;
+}
+
+.plus:hover rect:nth-child(-n+2){
+    fill: #fff;
+}
+
+.plus:hover rect:last-child{
+    stroke: #fff;
+}
