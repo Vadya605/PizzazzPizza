@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import PlusSvg from "./ComponentsSvg/PlusSvg"
 import MinusSvg from "./ComponentsSvg/MinusSvg"
 import { useState } from "react"
+import ProductCounter from "./ProductCounter"
 
 //скорее всего будет просто объект pizza
 const CardProduct = ( { titleProduct, photoProduct, compositionProduct, priceProduct } ) => {
@@ -12,11 +13,10 @@ const CardProduct = ( { titleProduct, photoProduct, compositionProduct, pricePro
             <img src={photoProduct} alt="" className="photo-product" />
             <h1 className="composition-product">{compositionProduct}</h1>
             <div className="count-price">
-                <div className="count">
-                    <MinusSvg className='minus' onClick={ ()=> countProduct > 1 && setCountProduct(countProduct-1) } />
-                    <span className="value">{countProduct}</span>
-                    <PlusSvg className='plus' onClick={ ()=> setCountProduct(countProduct+1) } />
-                </div>
+                <ProductCounter value={countProduct} 
+                    onClickMinus={ ()=> countProduct > 1 && setCountProduct(countProduct-1) } 
+                    onClickPlus={ ()=> setCountProduct(countProduct+1) }
+                />
                 <span className="price">{(priceProduct*countProduct).toFixed(1)} $</span>
             </div>
             <Link className="link-choose-product" to='/'>Choose</Link>
