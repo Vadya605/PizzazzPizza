@@ -1,6 +1,7 @@
 import Visa from '../assets/Visa.svg'
 import PayPal from '../assets/PayPal.svg'
 import { useState } from 'react'
+import Input from './Input'
 
 const FormAddingBankCard = () => {
     const [numberActiveImg, setNumberActiveImg] = useState(1) // мб есть что-то умнее?
@@ -15,23 +16,11 @@ const FormAddingBankCard = () => {
                 </div>
             </div>
             <div className="inputs">
-                <div className="input-box">
-                    <input type="text" className="input" id='number-bank-card'  placeholder=' ' />
-                    <label htmlFor="number-bank-card" className="flying-placeholder">Number bank card</label>
-                </div>
-                <div className="input-box">
-                    <input type="text" className="input" id='cardholder'  placeholder=' ' />
-                    <label htmlFor="cardholder" className="flying-placeholder">Cardholder</label>
-                </div>
+                <Input placaholder='Number bank card' id='number-bank-card' />
+                <Input placaholder='Cardholder' id='cardholder' />
                 <div className="row-inputs">
-                    <div className="input-box">
-                        <input type="text" className="input" id='expiration-date-bank-card'  placeholder=' ' />
-                        <label htmlFor="expiration-date-bank-card" className="flying-placeholder">Expiration date</label>
-                    </div>
-                    <div className="input-box">
-                        <input type="password" className="input" id='cvv-code'  placeholder=' ' />
-                        <label htmlFor="cvv-code" className="flying-placeholder">CVV</label>
-                    </div>
+                    <Input placaholder='Expiration date' id='expiration-date-bank-card' />
+                    <Input placaholder='CVV' id='cvv-code' />
                 </div>
             </div>
             <button type="submit" className='check-out'>Check out</button>

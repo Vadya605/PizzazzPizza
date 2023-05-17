@@ -154,7 +154,7 @@
     column-gap: 10px;
 }
 
-.input-box{
+.form-adding-bank-card .input-box{
     position: relative;  
     border-bottom: 2px solid rgba(0, 0, 0, 0.5);
     display: flex;
@@ -163,7 +163,7 @@
     width: 100%;
 }
 
-.flying-placeholder{
+.form-adding-bank-card .flying-placeholder{
     font-size: 18px;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
@@ -175,15 +175,15 @@
     transition: .3s ease-in-out;
 }
 
-.input{
+.form-adding-bank-card .input{
     width: 95%;
     font-size: 18px;
     color: #262627;
     height: 40px;
 }
 
-.input:focus+.flying-placeholder, 
-.input:not(:placeholder-shown) + .flying-placeholder{
+.form-adding-bank-card .input:focus+.flying-placeholder, 
+.form-adding-bank-card .input:not(:placeholder-shown) + .flying-placeholder{
     top:-2vh;
     transform: translateY(-50%);
     opacity: 1;
