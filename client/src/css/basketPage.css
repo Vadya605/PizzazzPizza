@@ -183,7 +183,9 @@
 }
 
 .form-adding-bank-card .input:focus+.flying-placeholder, 
-.form-adding-bank-card .input:not(:placeholder-shown) + .flying-placeholder{
+.form-adding-bank-card .input:not(:placeholder-shown) + .flying-placeholder,
+.form-address .input:focus+.flying-placeholder,
+.form-address .input:not(:placeholder-shown)+.flying-placeholder{
     top:-2vh;
     transform: translateY(-50%);
     opacity: 1;
@@ -227,6 +229,12 @@
 }
 
 .form-address .input-box{
+    position: relative;  
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    width: 100%;
     border: none;
 }
 
@@ -240,7 +248,16 @@
 }
 
 .form-address .flying-placeholder{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
     left: 7px;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: left center;
+    top:50%;
+    pointer-events: none;
+    transition: .3s ease-in-out;
 }
 
 .form-address .inputs .row-inputs{
