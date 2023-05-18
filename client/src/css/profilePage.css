@@ -1,0 +1,212 @@
+/* .profile{
+    height: 100vh;
+} */
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 50px; */
+}
+
+
+
+.profile .personal-data{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.form-persoanl-data{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+}
+
+.header-form{
+    color: #262627;
+    font-size: 25px;
+    
+}
+
+.input-box{
+    position: relative;  
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    width: 100%;
+}
+
+.flying-placeholder{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: left center;
+    top:50%;
+    pointer-events: none;
+    transition: .3s ease-in-out;
+}
+
+.input{
+    width: 100%;
+    font-size: 18px;
+    color: #262627;
+    height: 40px;
+}
+
+.input:focus+.flying-placeholder, 
+.input:not(:placeholder-shown) + .flying-placeholder{
+    top:-2vh;
+    transform: translateY(-50%);
+    opacity: 1;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.birthday{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.birthday .date-selection{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.label-birthday{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.select{
+    position: relative;
+}
+
+.select#Day{
+    width: 30%;
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.select#Month{
+    width: 70%;
+}
+
+.select-control{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+    padding: 10px;
+    /* border: 2px solid #000; */
+    color: #000;
+    cursor: pointer;
+}
+
+.value-control{
+    color: #262627;
+}
+
+.icon-control{
+    width: 15px;
+}
+
+.select-drop{
+    padding: 1px 0;
+    position: absolute;
+    background-color: #fff;
+    width: calc(100% + 5px);
+    border-radius: 10px;
+    top: -3px;
+    left: -3px;
+    opacity: 0;
+    z-index: -1;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    transition: all .2s ease-in-out;
+}
+
+.select-drop.show-drop{
+    opacity: 1;
+    z-index: 2;
+}
+
+.items-select-drop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 300px;
+    overflow-y: scroll;
+    background-color: transparent;
+
+}
+
+.items-select-drop::-webkit-scrollbar {
+    width: 0px;
+}
+
+.item-select-drop{
+    font-size: 18px;
+    padding: 5px 15px;
+    color: #262627;
+    width: 100%;
+    cursor: pointer;
+}
+
+.item-select-drop.selected-item{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.item-select-drop:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.save, .enroll, .logout{
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 20px;
+    background: linear-gradient(269.02deg, #945204 12.74%, #FF9A24 100.39%);
+    color: #262627;
+    transition: all .2s ease-in-out;
+}
+
+.logout{
+    width: 30%;
+}
+
+.save:hover, .enroll:hover, .logout:hover{
+    transform: translateY(-10px);
+}
+
+.form-bonuses{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.count-bonuses{
+    color: #262627;
+    font-size: 25px;
+}
+
+.order-history{
+    width: 40%;
+}
+
+
+
+
+

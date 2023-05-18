@@ -7,3 +7,11 @@ export const PIZZA_ROUTE = '/pizza'
 export const DRINKS_ROUTE = '/drinks'
 export const SAUCES_ROUTE = '/sauces'
 export const DESSERTS_ROUTE = '/desserts'
+export const DAYS = Array.from(Array(32).keys()).slice(1)
+export const MONTH = ['January', 'February', 
+                    'March', 'April', 
+                    'May', 'June', 
+                    'July', 'August', 
+                    'September', 'October', 
+                    'November', 'December', 
+                    ]
