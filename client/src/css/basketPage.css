@@ -8,6 +8,10 @@
     width: 40%;
 }
 
+.payment{
+    width: 30%;
+}
+
 .header-basket, .header-payment{
     font-size: 30px;
 }
@@ -99,6 +103,7 @@
 
 .forms{
     padding-top: 40px;
+    width: 100%;
 }
 
 .form-adding-bank-card{
@@ -109,7 +114,7 @@
     padding: 30px;
     background-color: #fff;
     border-radius: 10px;
-    width: 370px;
+    /* width: 370px; */
 }
 
 .choosing-type-bank-card{
@@ -193,7 +198,7 @@
     font-weight: 400;
 }
 
-.check-out, .order{
+.check-out, .btn-submit-address{
     align-self: flex-end;
     padding: 10px 30px;
     display: flex;
@@ -206,12 +211,12 @@
     width: 100%;
 }
 
-.check-out:hover, .order:hover{
+.check-out:hover, .btn-submit-address:hover{
     transform: translateY(-10px);
 }
 
 .form-address{
-    max-width: 370px;
+    /* max-width: 370px; */
     padding: 30px;
     height: 100%;
     border-radius: 10px;

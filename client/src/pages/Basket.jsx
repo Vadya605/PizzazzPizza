@@ -65,8 +65,8 @@ const Basket = () => {
                 <div className="payment">
                     <h1 className="header-payment">Payment</h1>
                     <div className="forms">
-                        <FormAddingBankCard /> 
-                        <FormAddress />
+                        {/* <FormAddingBankCard />  */}
+                        <FormAddress textButton='Order' />
                     </div>
                 </div>
             </div>

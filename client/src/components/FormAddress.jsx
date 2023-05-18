@@ -1,4 +1,4 @@
-const FormAddress = () => {
+const FormAddress = ( { textButton } ) => {
     return(
         <form className="form-address" onSubmit={(e) => e.preventDefault()}>
             <h1 className="header-form-address">Address</h1>
@@ -34,7 +34,7 @@ const FormAddress = () => {
                     <label htmlFor="apartment" className="flying-placeholder">Number apartament</label>
                 </div>
             </div>
-            <button className="order" type="submit">Order</button>
+            <button className="btn-submit-address" type="submit">{textButton}</button>
         </form>
     )
 }
