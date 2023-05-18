@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { DESSERTS_ROUTE, DRINKS_ROUTE, MAIN_ROUTE, PIZZA_ROUTE, PROFILE_ROUTE, SAUCES_ROUTE } from '../utils/consts'
 import '../css/footer.css'
+import SocialMediaIcons from './SocialMediaIcons'
 
 const Footer = () => {
     // добавить на фон картинку с помидорами или чем-то другим и найти иконки соц сетей
@@ -21,7 +22,7 @@ const Footer = () => {
                     </ul>
                 </nav>
                 <div className='social-media-icons'>
-                    icons not found
+                    <SocialMediaIcons />
                 </div>
             </div>
         </footer>
