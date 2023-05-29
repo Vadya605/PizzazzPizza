@@ -1,5 +1,3 @@
-
-
 public class IngredientService
 {
     private EF_DataContext _dataContext;
@@ -8,7 +6,7 @@ public class IngredientService
         _dataContext = dataContext;
     }
 
-    public List<ProductIngredient>? GetIngredientsProduct(int product_id){
+    public List<ProductIngredient>? GetProductIngredients(int product_id){
         List<ProductIngredient>? ingredientsProduct = _dataContext.ProductIngredients?.Where(
             ingredient => ingredient.productId == product_id
         ).ToList();

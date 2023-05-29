@@ -19,7 +19,7 @@ public class Product {
         get;
         set; 
     }
-    public List<ProductFeature>? productFeatures { get; set; }
+    public List<Feature>? productFeatures { get; set; }
 
     
 }

@@ -12,9 +12,11 @@ namespace server
     {
         private readonly ProductService _productService;
         private readonly IngredientService _ingredientService;
+        private readonly FeatureService _featureService;
         public ProductController(EF_DataContext dataContext){
             _productService = new ProductService(dataContext);
             _ingredientService = new IngredientService(dataContext);
+            _featureService = new FeatureService(dataContext);
         }
 
         [HttpGet]
@@ -25,7 +27,7 @@ namespace server
                 return NotFound();
             }
             allProducts.ForEach(product =>
-                product.productIngredients = _ingredientService.GetIngredientsProduct(product.id)
+                product.productIngredients = _ingredientService.GetProductIngredients(product.id)
             );
             return Ok(
                 allProducts
@@ -40,7 +42,7 @@ namespace server
                 return NotFound();
             }
             specificTypeProducts.ForEach(product =>
-                product.productIngredients = _ingredientService.GetIngredientsProduct(product.id)
+                product.productIngredients = _ingredientService.GetProductIngredients(product.id)
             );
             return Ok(
                 specificTypeProducts
@@ -50,11 +52,12 @@ namespace server
         [HttpGet]
         [Route("api/[controller]/{productId}")]
         public IActionResult GetById(int productId){
-            Product? specificIdProduct = _productService.GetProductInfoById(productId);
+            Product? specificIdProduct = _productService.GetProductById(productId);
             if(specificIdProduct == null){
                 return NotFound();
             }
-            specificIdProduct.productIngredients = _ingredientService.GetIngredientsProduct(productId);
+            specificIdProduct.productIngredients = _ingredientService.GetProductIngredients(productId);
+            specificIdProduct.productFeatures = _featureService.GetProductFeatures(productId);
             return Ok(
                 specificIdProduct
             );

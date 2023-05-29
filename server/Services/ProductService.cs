@@ -20,7 +20,7 @@ namespace server
             return specificTypeProducts;
         }
 
-        public Product? GetProductInfoById(int productid){
+        public Product? GetProductById(int productid){
             Product? specificIdProduct = _dataContext.Products?.Where(
                 product => product.id == productid
             ).FirstOrDefault();
