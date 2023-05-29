@@ -57,7 +57,6 @@ public class BasketService
         _dataContext.Baskets.Add(newBasket);
         _dataContext.SaveChanges();
         return true;
-        
     }
 
     public bool IncreaseCountProductInBasket(int productId){
